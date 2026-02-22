@@ -3,73 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Anjan Patel | Mechanical Engineering Technologist</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .card {
-            background: #ffffff;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            max-width: 380px;
-        }
-        /* Spinning Gear Animation */
-        .gear-icon {
-            font-size: 70px;
-            color: #3498db;
-            margin-bottom: 20px;
-            animation: spin 3s linear infinite;
-            display: inline-block;
-        }
-        @keyframes spin {
-            100% { transform: rotate(360deg); }
-        }
-        h2 { font-weight: 600; color: #333; margin-bottom: 10px; }
-        p { color: #777; margin-bottom: 30px; font-size: 1rem; }
-        
-        .contact-btn {
-            background-color: #3498db;
-            color: white !important;
-            padding: 14px 28px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-        }
-        .contact-btn:hover {
-            background-color: #2980b9;
-            transform: translateY(-2px);
-        }
-        .contact-btn i { margin-right: 8px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #0b2e2a; color: #fff; padding: 2rem 0; text-align: center; } /* Dark Green from your logo */
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        section { background: #fff; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #0b2e2a; border-bottom: 2px solid #0b2e2a; padding-bottom: 0.5rem; }
+        .project { margin-bottom: 1.5rem; }
+        .project h3 { color: #d9534f; margin-bottom: 0.5rem; } /* Subtle red accent */
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+        .skills li { background: #e0e0e0; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
+        a { color: #0b2e2a; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <i class="fa-solid fa-cog gear-icon"></i>
-        <h2>Site Maintenance</h2>
-        <p>We are currently updating our systems. Please check back soon.</p>
+<header>
+    <h1>Anjan Patel</h1>
+    <p>Mechanical Engineering Technologist | APEGA Member</p>
+    <p>Edmonton, Alberta</p>
+</header>
 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anjan@anjanpatel.ca&su=Inquiry" 
-           target="_blank" 
-           class="contact-btn">
-            <i class="fa-solid fa-envelope"></i> Contact Support
-        </a>
-    </div>
+<div class="container">
+    <section id="about">
+        <h2>Professional Profile</h2>
+        <p>I am a Mechanical Engineering Technologist based in Edmonton, dedicated to precision design and project excellence. With a Bachelor’s degree in Mechanical Engineering and active membership in APEGA, I bridge the gap between technical theory and practical field solutions.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Current Expertise</h2>
+        <p><strong>Mechanical Engineering Technologist</strong></p>
+        <ul>
+            <li>Developing detailed CAD designs and technical documentation.</li>
+            <li>Ensuring project compliance with Alberta Building Codes and safety standards.</li>
+            <li>Coordinating project lifecycles from initial design to final inspection.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Engineering Projects</h2>
+        <div class="project">
+            <h3>Electromagnetic Multipurpose Machine</h3>
+            <p>Designed a low-cost, high-efficiency machine for industrial operations like punching and embossing. Replaced traditional hydraulic systems with an electromagnetic plunger, reducing maintenance costs and energy consumption.</p>
+        </div>
+        <div class="project">
+            <h3>Hydraulic Scissor Lift</h3>
+            <p>Developed a portable, manual hydraulic lift for industrial material handling. Performed structural analysis using <b>ANSYS</b> to ensure safety and stability under variable load conditions.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Toolkit</h2>
+        <ul class="skills">
+            <li>AutoCAD</li>
+            <li>SolidWorks</li>
+            <li>ANSYS</li>
+            <li>Project Management</li>
+            <li>APEGA Standards</li>
+            <li>Technical Writing</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p>Email: <a href="mailto:anjan@anjanpatel.ca">anjan@anjanpatel.ca</a></p>
+        <p>Website: <a href="https://anjanpatel.ca">anjanpatel.ca</a></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Anjan Patel. Built for Professional Excellence.
+</footer>
 
 </body>
 </html>
