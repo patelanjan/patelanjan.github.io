@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjan Patel | Mechanical Engineering Technologist</title>
+    <title>Anjan Patel | Mechanical Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --bg: #ffffff;
-            --text: #2d3436;
+            --bg: #111111;
+            --card-bg: #1a1a1a;
+            --text: #eeeeee;
+            --text-muted: #a0a0a0;
             --accent: #3498db;
-            --light-bg: #f8f9fa;
+            --border: #2a2a2a;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -20,31 +22,32 @@
 
         /* Top Profile Section */
         .profile-header { display: flex; align-items: center; gap: 40px; margin-bottom: 80px; }
-        .profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid var(--light-bg); }
-        .profile-info h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 10px; color: #1a1a1a; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent); }
+        .profile-info h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 10px; color: #ffffff; }
         .profile-info p { font-size: 1.2rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
 
         /* Sections */
         section { margin-bottom: 60px; }
-        h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 30px; display: flex; align-items: center; gap: 15px; }
-        h2::after { content: ""; height: 2px; background: var(--light-bg); flex: 1; }
+        h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 30px; display: flex; align-items: center; gap: 15px; color: #ffffff; }
+        h2::after { content: ""; height: 1px; background: var(--border); flex: 1; }
 
-        .about-text { font-size: 1.1rem; color: #636e72; max-width: 800px; }
+        .about-text { font-size: 1.1rem; color: var(--text-muted); max-width: 800px; }
 
         /* Experience Items */
         .exp-item { margin-bottom: 40px; }
         .exp-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
-        .job-title { font-size: 1.25rem; font-weight: 700; color: #1a1a1a; }
+        .job-title { font-size: 1.25rem; font-weight: 700; color: #ffffff; }
         .exp-date { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
-        .company { font-weight: 600; color: #636e72; display: block; margin-bottom: 12px; }
+        .company { font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 12px; }
         
         ul { list-style: none; }
-        ul li { margin-bottom: 8px; position: relative; padding-left: 20px; color: #636e72; }
+        ul li { margin-bottom: 8px; position: relative; padding-left: 20px; color: var(--text-muted); }
         ul li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
 
         /* Skills Grid */
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
-        .skill { background: var(--light-bg); padding: 12px 20px; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-align: center; border: 1px solid #eee; }
+        .skill { background: var(--card-bg); padding: 12px 20px; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-align: center; border: 1px solid var(--border); transition: 0.3s; }
+        .skill:hover { border-color: var(--accent); color: var(--accent); }
 
         /* Footer / Links */
         .social { margin-top: 30px; display: flex; gap: 20px; }
@@ -65,7 +68,7 @@
             <img src="anjan.jpg" alt="Anjan Patel" class="profile-img">
             <div class="profile-info">
                 <h1>Anjan Patel</h1>
-                <p>Mechanical Engineering Technologist</p>
+                <p>Mechanical Engineer</p>
                 <div class="social">
                     <a href="mailto:anjan@anjanpatel.ca"><i class="fas fa-envelope"></i></a>
                     <a href="https://linkedin.com/in/patelanjan" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -77,9 +80,8 @@
         <section>
             <h2>About</h2>
             <p class="about-text">
-                Detail-oriented Mechanical Engineering Technologist based in Edmonton, AB. 
-                Over 4 years of experience in the oil & gas and industrial sectors, specializing in mechanical design, 
-                pressure equipment inspection (QA/QC), and maintaining regulatory compliance (ASME, CSA, API).
+                Mechanical Engineer with over 4 years of experience in Alberta's oil and gas and industrial sectors. 
+                Specialized in mechanical design (SolidWorks/AutoCAD), pressure equipment inspection (QA/QC), and maintaining regulatory compliance (ASME, CSA, API).
             </p>
         </section>
 
@@ -88,22 +90,37 @@
             
             <div class="exp-item">
                 <div class="exp-header">
-                    <span class="job-title">Mechanical Engineering Technologist</span>
+                    <span class="job-title">Mechanical Engineer</span>
                     <span class="exp-date">Oct 2024 — Present</span>
                 </div>
                 <span class="company">Kings Energy Services Ltd | Nisku, AB</span>
                 <ul>
-                    <li>Perform inspections and testing on ~200 pressure equipment units monthly.</li>
-                    <li>Develop 2D/3D models, P&IDs, and fabrication drawings.</li>
-                    <li>Manage QMS/HSE documentation and manage NCR closures.</li>
+                    <li>Perform inspections and functional testing on ~200 pressure equipment units monthly.</li>
+                    <li>Develop 2D/3D models and fabrication drawings using SolidWorks/AutoCAD.</li>
+                    <li>Manage QMS/HSE documentation and NCR identification through closure.</li>
                 </ul>
             </div>
 
             <div class="exp-item">
                 <div class="exp-header">
-                    <span class="job-title">Mechanical Engineering Technologist</span>
+                    <span class="job-title">Mechanical Engineer</span>
                     <span class="exp-date">Feb 2023 — Oct 2024</span>
                 </div>
                 <span class="company">UnityRig Equipment Inc. | Nisku, AB</span>
                 <ul>
-                    <li>
+                    <li>Optimized production efficiency through detailed CAD drawings and troubleshooting.</li>
+                    <li>Executed high-precision measurements ensuring 100% component compliance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">SolidWorks & AutoCAD</div>
+                <div class="skill">QA/QC Inspections</div>
+                <div class="skill">Pressure Equipment</div>
+                <div class="skill">ERP Systems</div>
+                <div class="skill">ASME & API Compliance</div>
+                <div class="skill">Technical Reporting</div>
+            </div>
