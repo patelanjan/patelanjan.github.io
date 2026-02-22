@@ -1,25 +1,30 @@
-# Anjan Patel | Mechanical Engineering Technologist
-Welcome to the repository for my professional portfolio website: **[anjanpatel.ca](https://anjanpatel.ca)**.
+# Anjan Patel
+**Mechanical Engineer** | Edmonton, Alberta
 
-This site is designed to showcase my technical expertise in mechanical design, QA/QC inspections, and manufacturing documentation within the Alberta energy sector.
+Mechanical Engineering Technologist with 4+ years of experience in Alberta's oil & gas and industrial sectors. Specialized in mechanical design (SolidWorks/AutoCAD), pressure equipment inspection (QA/QC), and regulatory compliance (ASME, CSA, API).
 
-## 🌐 Live Website
-The site is hosted via GitHub Pages and is accessible at: **[https://anjanpatel.ca](https://anjanpatel.ca)**
+[Live Portfolio](https://anjanpatel.ca) | [LinkedIn](https://linkedin.com/in/patelanjan)
 
-## 🛠️ Technical Profile
-* **Current Role:** Mechanical Engineering Technologist at Kings Energy Services.
-* **Core Competencies:** * Mechanical Design & Drafting (SolidWorks, AutoCAD)
-    * Pressure Equipment Inspection & Functional Testing
-    * Quality Management Systems (QMS) & HSE Documentation
-    * NCR Management & Root Cause Analysis
-* **Software:** AutoCAD, SolidWorks, Microsoft Business Central (ERP), Microsoft Office Suite.
+---
 
-## 💻 Repository Details
-This portfolio was built using a custom minimalist design optimized for engineering professionals.
-* **Front-end:** HTML5, CSS3 (Flexbox/Grid), FontAwesome Icons.
-* **Deployment:** GitHub Pages with custom domain integration via CanSpace.
-* **Security:** SSL/TLS encryption enforced via GitHub Pages.
+### 🛠️ Technical Expertise
+* **Design & Drafting:** SolidWorks (3D Modeling), AutoCAD (2D P&IDs, Fabrication Drawings)
+* **Quality & Compliance:** QA/QC Inspections, NCR Management, QMS/HSE Documentation
+* **Industrial Systems:** Pressure Equipment Testing, Lifting Systems, Rotating Equipment
+* **Software:** Microsoft Business Central (ERP), Microsoft Office Suite
 
-## 📬 Contact
-* **LinkedIn:** [linkedin.com/in/patelanjan](https://www.linkedin.com/in/patelanjan)
-* **Email:** [anjan@anjanpatel.ca](mailto:anjan@anjanpatel.ca)
+### 💼 Professional Experience
+**Mechanical Engineering Technologist** | Kings Energy Services Ltd  
+*Oct 2024 – Present* * Perform inspections and functional testing on ~200 pressure equipment units monthly.
+* Develop technical models and work packages for lifting systems and fabrication.
+
+**Mechanical Engineering Technologist** | UnityRig Equipment Inc  
+*Feb 2023 – Oct 2024* * Streamlined technical documentation for QA and project management.
+* Executed high-precision measurements to ensure 100% component compliance.
+
+### 🎓 Education
+* **Bachelor of Engineering (Mechanical)** | Gujarat Technological University
+* **AutoCAD Certified Professional**
+
+---
+*Built with HTML/CSS and hosted on GitHub Pages.*
