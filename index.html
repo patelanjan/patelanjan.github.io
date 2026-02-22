@@ -30,13 +30,12 @@
             margin-bottom: 25px;
             animation: spin 4s linear infinite;
         }
-        @keyframes spin {
-            100% { transform: rotate(360deg); }
-        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
         h2 { font-weight: 600; margin-bottom: 10px; letter-spacing: 1px; }
-        .email-link {
+        p { color: #666; margin-bottom: 30px; }
+        
+        .email-button {
             display: inline-block;
-            margin-top: 20px;
             padding: 12px 24px;
             background-color: #3498db;
             color: white !important;
@@ -45,16 +44,12 @@
             font-weight: 500;
             transition: 0.3s;
             cursor: pointer;
+            border: none;
+            outline: none;
         }
-        .email-link:hover {
+        .email-button:hover {
             background-color: #2980b9;
             transform: translateY(-2px);
-        }
-        .email-text {
-            display: block;
-            margin-top: 15px;
-            font-size: 0.9rem;
-            color: #888;
         }
     </style>
 </head>
@@ -65,12 +60,21 @@
         <h2>UNDER MAINTENANCE</h2>
         <p>The site is being updated. Please check back soon.</p>
 
-        <a href="mailto:anjan@anjanpatel.ca" class="email-link">
+        <button class="email-button" onclick="contactSupport()">
             <i class="fa-regular fa-envelope"></i> Contact Support
-        </a>
-
-        <span class="email-text">anjan@anjanpatel.ca</span>
+        </button>
     </div>
 
+    <script>
+        function contactSupport() {
+            const email = 'anjan@anjanpatel.ca';
+            // 1. Try to open the email app
+            window.location.href = 'mailto:' + email;
+            
+            // 2. Show the email in a popup so they can see it if the app doesn't open
+            alert('To contact us, please email: ' + email);
+        }
+    </script>
+
 </body>
-</html>\
+</html>
