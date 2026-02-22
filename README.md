@@ -1,28 +1,28 @@
-# Anjan Patel
-**Mechanical Engineer** | Edmonton, Alberta
+# Anjan Patel | Mechanical Engineer
 
-Mechanical Engineer with over 4 years of experience in the oil & gas and industrial sectors. Expertise in mechanical design (SolidWorks/AutoCAD), QA/QC inspections, and regulatory compliance (ASME, API).
+Located in **Edmonton, Alberta**, I am a detail-oriented Mechanical Engineer specializing in project coordination, QA/QC inspection, and CAD design within the industrial and energy sectors.
 
-[Live Portfolio](https://anjanpatel.ca) | [LinkedIn](https://linkedin.com/in/patelanjan)
+---
+
+### 🌐 Professional Links
+* **Website:** [anjanpatel.ca](https://anjanpatel.ca)
+* **Email:** [anjan@anjanpatel.ca](mailto:anjan@anjanpatel.ca)
+* **X (Twitter):** [@anjanpatel_](https://x.com/anjanpatel_)
 
 ---
 
 ### 🛠️ Technical Expertise
-* **Design & Drafting:** SolidWorks (3D Modeling), AutoCAD (2D Fabrication Drawings)
-* **Quality & Compliance:** QA/QC Inspections, NCR Management, QMS/HSE Documentation
-* **Industrial Operations:** Pressure Equipment Testing, Lifting Systems, ERP Systems
+* **Design & Drafting:** AutoCAD, SolidWorks, Mechanical System Design
+* **Project Management:** Project Coordination, Technical Documentation, ERP (Business Central)
+* **Quality Control:** QA/QC Inspection, Compliance Standards, Industrial Safety
 
-### 💼 Professional Experience
-**Mechanical Engineer** | Kings Energy Services Ltd  
-*Oct 2024 – Present* * Performing inspections and functional testing on ~200 pressure equipment units monthly.
-* Developing technical models, P&IDs, and repair work packages.
-
-**Mechanical Engineer** | UnityRig Equipment Inc  
-*Feb 2023 – Oct 2024* * Executed high-precision measurements ensuring 100% component compliance.
-* Developed detailed CAD drawings to optimize production efficiency.
-
-### 🎓 Education
-* **Bachelor of Engineering (Mechanical)** | Gujarat Technological University
+### 💼 Current Focus
+Currently focused on optimizing mechanical project workflows and engineering documentation at **UnityRig Equipment Inc.**, ensuring high-level technical execution and operational efficiency.
 
 ---
-*Built with HTML/CSS and hosted on GitHub Pages.*
+
+### 📫 Get In Touch
+I am always open to discussing mechanical engineering projects, technical innovations, or professional opportunities. The best way to reach me is via my professional email: **anjan@anjanpatel.ca**
+
+---
+*© 2026 Anjan Patel | Edmonton, AB*
