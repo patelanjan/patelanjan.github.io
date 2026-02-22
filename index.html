@@ -3,20 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjan Patel | Mechanical Engineering Technologist</title>
+    <title>Anjan Patel | Mechanical Engineering Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #0b2e2a; color: #fff; padding: 2.5rem 0; text-align: center; }
-        .logo { width: 130px; height: auto; margin-bottom: 15px; border-radius: 50%; border: 3px solid #fff; background: white; }
-        header h1 { margin: 0; font-size: 2.8rem; letter-spacing: 1px; }
-        header p { font-size: 1.2rem; opacity: 0.9; margin: 5px 0; }
-        .container { max-width: 950px; margin: 2rem auto; padding: 0 1.5rem; }
-        section { background: #fff; padding: 2.5rem; margin-bottom: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .profile-flex { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
-        .profile-pic { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 6px solid #0b2e2a; }
-        h2 { color: #0b2e2a; border-bottom: 3px solid #d9534f; padding-bottom: 0.5rem; display: inline-block; margin-bottom: 1.5rem; }
-        .job-title { color: #0b2e2a; margin-bottom: 5px; font-size: 1.4rem; }
-        .job-meta { color: #777; font-style: italic; margin-bottom: 15px; }
-        .project { margin-bottom: 1.5rem; padding: 15px; border-left: 5px solid #0b2e2a; background: #f9f9f9; }
-        .project h3 { color: #d9534f; margin-top: 0; }
-        .skills-list, .cert-list { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding:
+        :root {
+            --primary-color: #0b2e2a; /* Dark Green from your brand */
+            --accent-color: #d9534f;
+            --text-dark: #333;
+            --bg-light: #f4f7f6;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: var(--text-dark); margin: 0; padding: 0; background-color: var(--bg-light); }
+        
+        /* Header & Brand Identity */
+        header { background: var(--primary-color); color: #fff; padding: 3rem 0; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .logo { width: 140px; height: auto; margin-bottom: 15px; border-radius: 50%; border: 4px solid #fff; background: white; }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; text-transform: uppercase; }
+        header p { font-size: 1.3rem; opacity: 0.9; margin-top: 5px; font-weight: 300; }
+
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+        
+        /* Sections */
+        section { background: #fff; padding: 2.5rem; margin-bottom: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary-color); border-bottom: 3px solid var(--accent-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; font-size: 1.8rem; }
+
+        /* Profile Layout */
+        .profile-area { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+        .profile-pic { width: 240px; height: 240px; border-radius: 20px; object-fit: cover; border: 5px solid var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .bio-text { flex: 1; min-width: 300px; }
+
+        /* Experience & Projects */
+        .card { background: #fdfdfd; padding: 20px; border-radius: 10px; border-left: 6px solid var(--primary-color); margin-bottom: 1.5rem; }
+        .card h3 { color: var(--accent-color); margin-top: 0; margin-bottom: 10px; }
+        
+        /* Skills & Certificates */
+        .tag-container { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+        .tag { background: var(--primary-color); color: #fff; padding: 8px 20px; border-radius: 50px; font-size: 0.9rem; font-weight: 500; }
+        .cert-tag { border: 2px solid var(--primary-color); color: var(--primary-color); background: #fff; padding: 8px 20px; border-radius: 8px; font-weight: bold; }
+
+        footer { text-align: center; padding: 4rem 1rem; color: #777; background: #fff; margin-top: 2rem; }
+        .contact-link { color: var(--accent-color); text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+        
+        @media (max-width: 768px) {
+            .profile-area { justify-content: center; text-align: center; }
+            header h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Anjan Patel Logo" class="logo">
+    <h1>Anjan Patel</h1>
+    <p>Mechanical Engineering Technologist | Edmonton, AB</p>
+</header>
+
+<div class="container">
+    <section id="about">
+        <div class="profile-area">
+            <img src="profile pic.jpg" alt="Anjan Patel" class="profile-pic">
+            <div class="bio-text">
+                <h2>About Me</h2>
+                <p>I am a highly motivated <strong>Mechanical Engineering Technologist</strong> based in Edmonton. I specialize in bridging the gap between design theory and practical application. With a focus on mechanical systems, I deliver high-precision CAD models and project documentation that meet strict industry and safety standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Mechanical Engineering Technologist</h3>
+            <p><strong>Edmonton, Alberta</strong></p>
+            <ul>
+                <li>Executing complex 2D and 3D CAD designs using AutoCAD and SolidWorks.</li>
+                <li>Coordinating project workflows to ensure timely delivery and technical accuracy.</li>
+                <li>Conducting material analysis and ensuring all shop drawings meet client specifications.</li>
+                <li>Collaborating with engineering teams to optimize manufacturing processes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Expertise & Education</h2>
+        <div style="margin-bottom: 2rem;">
+            <div class="tag-container" style="margin-bottom: 1rem;">
+                <span class="cert-tag">Bachelor of Engineering (Mechanical)</span>
+                <span class="cert-tag">Engineering Technologist Designation</span>
+            </div>
+        </div>
+        <div class="tag-container">
+            <span class="tag">AutoCAD</span>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">ANSYS</span>
+            <span class="tag">Technical Writing</span>
+            <span class="tag">Project Coordination</span>
+            <span class="tag">Mechanical Systems</span>
+            <span class="tag">Manufacturing</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Engineering Projects</h2>
+        
+        <div class="card">
+            <h3>Electromagnetic Multipurpose Machine</h3>
+            <p>Design and parametric study of an electromagnetic punching and embossing system. This project focused on reducing production costs and energy consumption for industrial sheet metal operations.</p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Hydraulic Scissor Lift</h3>
+            <p>Engineered a manual hydraulic lifting mechanism for portable material handling. Performed full structural verification using <strong>ANSYS</strong> to ensure safe load capacities and mechanical stability.</p>
+        </div>
+        
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2>Let's Work Together</h2>
+        <p>I am always open to discussing new projects and technical challenges.</p>
+        <p>Email: <a href="mailto:anjan@anjanpatel.ca" class="contact-link">anjan@anjanpatel.ca</a></p>
+        <p>Website: <a href="https://anjanpatel.ca" class="contact-link">anjanpatel.ca</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Anjan Patel. Professional Portfolio. Edmonton, Alberta.</p>
+</footer>
+
+</body>
+</html>
