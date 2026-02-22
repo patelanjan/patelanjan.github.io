@@ -3,77 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjan Patel | Site Under Maintenance</title>
+    <title>Maintenance | Anjan Patel</title>
     <style>
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('./engback.jpg') no-repeat center center fixed;
-            background-size: cover;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./engback.jpg') center/cover;
+            color: white;
+            font-family: sans-serif;
             text-align: center;
         }
-
-        .container {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 50px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 500px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
-
-        /* Replace 'logo.png' with your actual logo filename */
-        .logo {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.8; }
-
         .btn {
-            padding: 12px 30px;
-            background-color: #007bff;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: 0.3s;
-            display: inline-block;
+            transition: transform 0.2s, background 0.2s;
         }
-
-        .btn:hover { background-color: #0056b3; transform: scale(1.05); }
-
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.8rem;
-            opacity: 0.6;
+        .btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <img src="./logo.png" alt="Anjan Patel Logo" class="logo">
-        
-        <h1>Under Maintenance</h1>
-        <p>I'm currently updating my portfolio to better showcase my mechanical engineering projects. I'll be back shortly!</p>
-        
-        <a href="mailto:admin@anjanpatel.ca" class="btn">Contact Me</a>
+    <div class="box">
+        <img src="./logo.png" alt="Logo" style="width:120px; margin-bottom:20px;">
+        <h1>Site Under Maintenance</h1>
+        <p>I'm currently updating my portfolio. Please reach out via email.</p>
+        <a href="mailto:admin@anjanpatel.ca" target="_blank" class="btn">Email Anjan Directly</a>
     </div>
-
-    <footer>
-        &copy; 2026 Anjan Patel | anjan@anjanpatel.ca
-    </footer>
-
 </body>
 </html>
