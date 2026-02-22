@@ -11,8 +11,7 @@
             height: 100%;
             font-family: 'Segoe UI', Arial, sans-serif;
             color: white;
-            /* Engineering background with dark overlay */
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
                         url('./engback.jpg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
@@ -23,18 +22,25 @@
 
         .container {
             padding: 40px;
+            max-width: 500px;
         }
 
         .logo {
             width: 180px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         h1 { 
-            font-size: 2.2rem; 
+            font-size: 2rem; 
             letter-spacing: 2px;
-            margin-bottom: 40px; 
+            margin-bottom: 10px; 
             text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 30px;
+            opacity: 0.8;
+            font-size: 1.1rem;
         }
 
         .btn {
@@ -45,7 +51,7 @@
             border-radius: 4px;
             font-weight: bold;
             font-size: 1.1rem;
-            transition: background 0.3s, transform 0.2s;
+            transition: 0.3s;
             display: inline-block;
             border: none;
             cursor: pointer;
@@ -53,9 +59,15 @@
 
         .btn:hover { 
             background-color: #0056b3; 
-            transform: scale(1.05);
         }
 
+        .email-text {
+            margin-top: 20px;
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -64,8 +76,11 @@
         <img src="./logo.png" alt="Logo" class="logo">
         
         <h1>Site Under Maintenance</h1>
+        <p>Our website is currently undergoing scheduled maintenance.</p>
         
-        <a href="mailto:support@anjanpatel.ca" target="_blank" class="btn">CONTACT US</a>
+        <a href="mailto:support@anjanpatel.ca" class="btn">CONTACT US</a>
+
+        <a href="mailto:support@anjanpatel.ca" class="email-text">support@anjanpatel.ca</a>
     </div>
 
 </body>
