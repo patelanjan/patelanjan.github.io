@@ -8,6 +8,7 @@
   <style>
     :root {
       --primary: #2563eb;
+      --primary-dark: #1d4ed8;
       --bg: #f8fafc;
       --card: #ffffff;
       --text: #1e293b;
@@ -35,21 +36,66 @@
       z-index: 1000;
     }
 
-    .nav-logo { font-weight: 800; font-size: 1.2rem; color: var(--primary); letter-spacing: 1px; }
-    .nav-links a { text-decoration: none; color: var(--text); margin-left: 25px; font-weight: 500; font-size: 0.9rem; }
+    .nav-logo { font-weight: 800; font-size: 1.2rem; color: var(--primary); text-decoration: none; letter-spacing: 1px; }
 
-    .hero { padding: 100px 10%; background: white; text-align: center; }
+    .nav-links a { text-decoration: none; color: var(--text); margin-left: 25px; font-weight: 500; font-size: 0.9rem; transition: 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .hero { padding: 100px 10%; background: white; text-align: center; border-bottom: 1px solid #f1f5f9; }
     .hero h1 { font-size: 3.5rem; margin: 0; color: #0f172a; }
     .hero p { font-size: 1.2rem; color: var(--text-light); margin: 20px 0 30px; }
 
     .btn-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
     .btn { padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; }
     .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); }
     .btn-outline { background: white; color: var(--primary); border: 2px solid var(--primary); }
     .btn-outline:hover { background: #eff6ff; }
 
     .section { padding: 80px 10%; }
-    .section-title { font-size: 2.2rem; margin-bottom: 50px; text-align: center; font-weight: 700; }
+    .section-title { font-size: 2.2rem; margin-bottom: 50px; text-align: center; font-weight: 700; position: relative; }
+    .section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--primary); margin: 10px auto; border-radius: 2px; }
 
-    /* Timeline Styling */
-    .timeline { position: relative; max-width: 8
+    .timeline { position: relative; max-width: 800px; margin: 0 auto; padding-left: 30px; }
+    .timeline::after { content: ''; position: absolute; width: 2px; background: #e2e8f0; top: 0; bottom: 0; left: 7px; }
+    .timeline-item { position: relative; margin-bottom: 40px; }
+    .timeline-dot { position: absolute; width: 16px; height: 16px; background: var(--primary); border-radius: 50%; left: -30px; top: 5px; z-index: 1; border: 4px solid white; }
+    .timeline-content { background: white; padding: 25px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+    .timeline-date { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+    .timeline-title { font-weight: 700; font-size: 1.2rem; margin: 5px 0; }
+    .timeline-company { color: var(--text-light); font-size: 0.95rem; margin-bottom: 12px; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto; }
+    .skill-item { margin-bottom: 20px; }
+    .skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+    .skill-bar { width: 100%; height: 8px; background: #e2e8f0; border-radius: 10px; overflow: hidden; }
+    .skill-progress { height: 100%; background: var(--primary); border-radius: 10px; }
+
+    footer { background: #0f172a; color: white; padding: 60px 10%; text-align: center; }
+    .social-links { margin-bottom: 25px; display: flex; justify-content: center; gap: 20px; }
+    .social-icon { color: white; font-size: 1.5rem; transition: 0.3s; }
+    .social-icon:hover { color: var(--primary); transform: translateY(-3px); }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      nav { padding: 15px 5%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home" class="nav-logo">ANJAN PATEL</a>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="mailto:anjan@anjanpatel.ca">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Anjan Patel</h1>
+    <p>Mechanical Engineering Technologist | Edmonton, AB</p>
+    <div class="btn-group">
+      <a href="mailto:anjan@anjanpatel.ca" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+      <a href="Anjan_Patel_Resume.pdf" download class
