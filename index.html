@@ -3,67 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjan Patel | In Progress</title>
+    <title>Site Under Process</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            background-color: #0b0e14;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #1a1a1a;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            text-align: center;
+            overflow: hidden;
         }
+
         .container {
-            padding: 20px;
+            text-align: center;
+            padding: 40px;
+            max-width: 400px;
         }
+
+        /* Animated Gear Icon */
+        .icon-container {
+            margin-bottom: 25px;
+        }
+
+        .fa-gear {
+            font-size: 60px;
+            color: #2563eb; /* Professional Blue */
+            animation: spin 4s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
         .status-tag {
-            color: #58a6ff;
-            font-size: 0.8rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            border: 1px solid #58a6ff;
-            padding: 5px 15px;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 6px 16px;
             border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border: 1px solid #e2e8f0;
             display: inline-block;
             margin-bottom: 20px;
         }
+
         h1 {
-            font-size: 2.5rem;
-            margin: 10px 0;
+            font-size: 1.8rem;
+            margin: 0 0 12px 0;
+            font-weight: 600;
+            color: #0f172a;
         }
-        .subtitle {
-            color: #8b949e;
-            font-size: 1.2rem;
+
+        p {
+            color: #64748b;
+            font-size: 1rem;
             margin-bottom: 40px;
+            line-height: 1.5;
         }
-        .contact-info {
-            padding-top: 20px;
-            border-top: 1px solid #30363d;
+
+        .contact-box {
+            border-top: 1px solid #f1f5f9;
+            padding-top: 30px;
         }
-        .contact-info p {
-            color: #8b949e;
-            margin-bottom: 10px;
-        }
+
         .email-link {
-            color: #58a6ff;
+            color: #2563eb;
             text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .email-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="status-tag">SITE UNDER PROCESS</div>
-    <h1>Anjan Patel</h1>
-    <p class="subtitle">Coming Soon</p>
+    <div class="icon-container">
+        <i class="fa-solid fa-gear"></i>
+    </div>
     
-    <div class="contact-info">
-        <p>Mechanical Engineer</p>
+    <div class="status-tag">In Progress</div>
+    <h1>Site Under Process</h1>
+    <p>The digital portfolio is currently being optimized. Please check back soon.</p>
+    
+    <div class="contact-box">
         <a href="mailto:anjan@anjanpatel.ca" class="email-link">anjan@anjanpatel.ca</a>
     </div>
 </div>
