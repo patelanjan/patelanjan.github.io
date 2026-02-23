@@ -3,103 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maintenance | Anjan Patel</title>
+    <title>Undergoing Maintenance</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            /* Your professional background */
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./engback.jpg') center/cover no-repeat fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa; /* Light clean background like the image */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .card {
+        .container {
             background-color: white;
-            padding: 50px 40px;
-            border-radius: 10px;
+            padding: 60px 40px;
+            border-radius: 8px;
             max-width: 600px;
             width: 90%;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            text-align: left; /* Aligned left to match the image style */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
-        /* The Illustration area */
-        .illustration {
-            width: 100%;
-            max-width: 350px;
-            margin: 0 auto 30px;
+        .logo-area {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
         }
 
         .logo {
-            width: 140px;
-            margin-bottom: 20px;
+            height: 40px; /* Adjust based on your logo shape */
+            margin-right: 15px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
         }
 
         h1 {
             color: #2c3e50;
-            font-size: 2.2rem;
-            margin: 0 0 10px;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
 
         p {
             color: #5d6d7e;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #2980b9;
-            color: white;
-            padding: 14px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #1a5276;
-        }
-
-        .links {
-            margin-top: 25px;
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-
-        .links a {
-            color: #3498db;
-            text-decoration: none;
-            word-break: break-all;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <img src="./logo.png" alt="Anjan Patel Logo" class="logo">
+    <div class="container">
+        <div class="logo-area">
+            <img src="./logo.png" alt="Logo" class="logo">
+            <span class="logo-text">Anjan Patel</span>
+        </div>
 
         <h1>We're Undergoing Maintenance</h1>
-        <p>We'll be back online shortly with an improved experience!</p>
-
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support@anjanpatel.ca" target="_blank" class="btn">
-            Contact Support
-        </a>
-
-        <div class="links">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support@anjanpatel.ca" target="_blank">
-                https://mail.google.com/mail/?view=cm&fs=1&to=support@anjanpatel.ca
-            </a>
-            <br>
-            <a href="mailto:support@anjanpatel.ca">mailto:support@anjanpatel.ca</a>
-        </div>
+        <p>We'll be back online shortly with<br>an improved experience!</p>
     </div>
 
 </body>
